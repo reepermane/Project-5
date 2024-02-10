@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://cyu7n8d4fmkv"]
+
+[ext_resource type="Script" path="res://charc/weapon_resource.gd" id="1_g7s2h"]
+
+[resource]
+script = ExtResource("1_g7s2h")
+Weapon_Name = "assN"
+Activate_Anim = "assN Activate"
+Shoot_Anim = "assN Shoot"
+Reload_Anim = "assN Reload"
+Deactivate_Anim = "assN Deactivate"
+Out_Of_Ammo_Anim = "assN OOA"
+Current_Ammo = 20
+Reserve_Ammo = 120
+Magazine = 20
+Max_Ammo = 20
+Auto_Fire = false
+Type = 1
+Weapon_Range = 2000
+Damage = 25

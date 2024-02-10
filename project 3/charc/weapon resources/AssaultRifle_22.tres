@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Weapon_Resource" load_steps=2 format=3 uid="uid://d2nkuwtjkxbdf"]
+
+[ext_resource type="Script" path="res://charc/weapon_resource.gd" id="1_crhx0"]
+
+[resource]
+script = ExtResource("1_crhx0")
+Weapon_Name = "akN"
+Activate_Anim = "akN Activate"
+Shoot_Anim = "akN Shoot"
+Reload_Anim = "akN Reload"
+Deactivate_Anim = "akN Deactivate"
+Out_Of_Ammo_Anim = "akN OOA"
+Current_Ammo = 30
+Reserve_Ammo = 130
+Magazine = 30
+Max_Ammo = 20
+Auto_Fire = false
+Type = 1
+Weapon_Range = 2000
+Damage = 25

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5ohkaa76vrc8"]
+
+[ext_resource type="Script" path="res://World_Objects/physics_target.gd" id="1_afh0x"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4dux5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_i4lxk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8i0v0"]
+
+[node name="box1" type="RigidBody3D" groups=["Target"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0130236, 0.383972, -0.0077939)
+physics_material_override = SubResource("PhysicsMaterial_4dux5")
+script = ExtResource("1_afh0x")
+
+[node name="box" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_i4lxk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00106895, 1.19209e-07, 0)
+shape = SubResource("BoxShape3D_8i0v0")
